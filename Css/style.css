@@ -6,3 +6,56 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: 'ALK Sanet', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #ddd;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 100rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222222;
+  height: 6.8rem;
+  padding: 1.2rem 12.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 4.2rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.active:link,
+.active:visited,
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #00a3e0;
+}
