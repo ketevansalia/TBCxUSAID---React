@@ -1,26 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: 'ALK Sanet', sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #ddd;
-  overflow-x: hidden;
-}
-.container {
-  max-width: 100rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
+/* HEADER */
 .header {
-  background-color: #222222;
+  background-color: #161616;
   height: 6.8rem;
   padding: 1.2rem 12.8rem;
   position: sticky;
@@ -33,24 +13,20 @@ body {
   align-items: center;
 }
 
-.logo {
-  height: 4.2rem;
-}
-
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.6rem;
+  gap: 4.2rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #ddd;
-  font-weight: 500;
-  font-size: 1.6rem;
+  color: #f4f4f4;
+  font-weight: 400;
+  font-size: 1.4rem;
   transition: all 0.3s;
 }
 .active:link,
@@ -58,4 +34,124 @@ body {
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #00a3e0;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url('../imgs/hero-img.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 40rem;
+  padding: 12rem 0;
+}
+
+/* TEXT SECTION */
+.text-section {
+  background-color: #2b2b2b;
+  padding: 6.8rem 0;
+}
+
+/* COURSES SECTION */
+.courses-section {
+  background-color: #161616;
+  padding: 4.8rem 0;
+}
+
+.training-courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 3.6rem;
+  row-gap: 2.4rem;
+}
+.course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  border: 0.1rem solid #dbdbdb45;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.course-img {
+  width: 30rem;
+}
+.course-icon {
+  font-size: 2rem;
+  color: #00a3e0;
+}
+
+.course-details {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+/* PARTNERS SECTION */
+.partners-section {
+  background-color: #2b2b2b;
+}
+
+/* QNA SECTION */
+.qna-section {
+  background-color: #161616;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000000e0;
+  padding: 4.8rem 0;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+}
+.rules:link,
+.rules:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  transition: all 0.3s;
+}
+.rules:hover,
+.rules:active {
+  color: #f4f4f472;
+}
+
+.soc-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.8rem;
+}
+.footer-mail:link,
+.footer-mail:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #00a3e0;
+  padding: 1.6rem 3.2rem;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.footer-mail:hover,
+.footer-mail:active {
+  color: #2b2b2b;
+  background-color: #f4f4f4;
 }

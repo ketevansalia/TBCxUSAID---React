@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'ALK Sanet', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+.font-eng {
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  max-width: 100rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 500;
+  line-height: 1.2;
+}
+.heading-primary {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.heading-secondary {
+  color: #dbdbdb;
+  font-size: 2.4rem;
+}
+.heading-tertiary {
+  font-size: 1.8rem;
+}
+.paragraph,
+.courses-paragraph {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.paragraph {
+  font-size: 2.8rem;
+  line-height: 1.6;
+}
+.courses-paragraph {
+  font-size: 1.4rem;
+  margin-bottom: 10.2rem;
+}
+.hero-paragraph {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.8px;
+  font-weight: 500;
+  color: #00a3e0;
+}
+.link:hover,
+.link:active {
+  color: #93abb4;
+}
+
+.logo-sm {
+  height: 3.8rem;
+}
+.logo-md {
+  height: 4.2rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2.8rem;
+}
+.margin-bottom-md {
+  margin-bottom: 6.4rem;
+}
