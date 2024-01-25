@@ -13,9 +13,11 @@ body {
   color: #f4f4f4;
   overflow-x: hidden;
 }
+
 .font-eng {
   font-family: 'Rubik', sans-serif;
 }
+
 .container {
   max-width: 100rem;
   padding: 0 3.2rem;
@@ -43,19 +45,20 @@ body {
   font-weight: 400;
   letter-spacing: normal;
 }
+
 .paragraph {
   font-size: 2.8rem;
   line-height: 1.6;
 }
-.courses-paragraph {
+.courses-sm {
   font-size: 1.4rem;
-  margin-bottom: 10.2rem;
+  line-height: 1.5;
 }
 .hero-paragraph {
   font-size: 3.2rem;
   font-weight: 900;
 }
-
+.opacity,
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -69,11 +72,19 @@ body {
   color: #93abb4;
 }
 
+.opacity:hover,
+.opacity:active {
+  color: #00a4e0cc;
+}
+
 .logo-sm {
   height: 3.8rem;
 }
 .logo-md {
   height: 4.2rem;
+}
+.logo-l {
+  height: 5.2rem;
 }
 
 .margin-bottom-sm {
@@ -81,4 +92,21 @@ body {
 }
 .margin-bottom-md {
   margin-bottom: 6.4rem;
+}
+.margin-bottom-l {
+  margin-bottom: 10.2rem;
+}
+.paddin-left {
+  padding-left: 1.2rem;
+}
+
+.flex-raw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
