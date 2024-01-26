@@ -250,3 +250,21 @@
   color: #2b2b2b;
   background-color: #f4f4f4;
 }
+
+/* MOBILE NAVIGATION*/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
