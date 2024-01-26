@@ -8,6 +8,7 @@ html {
 }
 body {
   font-family: 'ALK Sanet', sans-serif;
+  transform: lowercase;
   line-height: 1;
   font-weight: 400;
   color: #f4f4f4;
@@ -58,7 +59,7 @@ body {
   font-size: 3.2rem;
   font-weight: 900;
 }
-.opacity,
+
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -70,11 +71,6 @@ body {
 .link:hover,
 .link:active {
   color: #93abb4;
-}
-
-.opacity:hover,
-.opacity:active {
-  color: #00a4e0cc;
 }
 
 .logo-sm {
@@ -93,9 +89,7 @@ body {
 .margin-bottom-md {
   margin-bottom: 6.4rem;
 }
-.margin-bottom-l {
-  margin-bottom: 10.2rem;
-}
+
 .paddin-left {
   padding-left: 1.2rem;
 }
@@ -109,4 +103,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 5fr 1fr;
+  row-gap: 2.4rem;
+  padding: 3.4rem 2.4rem;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr 4fr 1fr;
+  row-gap: 2.4rem;
+  padding: 3.4rem 2.4rem;
 }

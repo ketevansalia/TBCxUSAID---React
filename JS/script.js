@@ -44,6 +44,12 @@ function nextSlide() {
   slideIndex++;
   showSlide(slideIndex);
 }
+// slide for dots
+function dotSlide(index) {
+  clearInterval(intervalId);
+  slideIndex = index;
+  showSlide(slideIndex);
+}
 
 // FAQ
 const faqs = document.querySelectorAll('.faq');
