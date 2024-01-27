@@ -74,7 +74,7 @@ btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
 });
 
-// RULES
+// RULES SECTION
 
 const rules = document.querySelector('.section-rules');
 const overlay = document.querySelector('.overlay');
