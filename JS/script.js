@@ -78,7 +78,7 @@ btnNavEl.addEventListener('click', function () {
 
 const rules = document.querySelector('.section-rules');
 const overlay = document.querySelector('.overlay');
-const btnCloseRules = document.querySelector('.close');
+const btnCloseRules = document.querySelectorAll('.close');
 const btnsOpenRules = document.querySelectorAll('.rules');
 
 const closeRules = function () {
@@ -93,7 +93,10 @@ const openRules = function () {
 for (let i = 0; i < btnsOpenRules.length; i++)
   btnsOpenRules[i].addEventListener('click', openRules);
 
-btnCloseRules.addEventListener('click', closeRules);
+for (let i = 0; i < btnCloseRules.length; i++) {
+  btnCloseRules[i].addEventListener('click', closeRules);
+}
+
 overlay.addEventListener('click', closeRules);
 
 document.addEventListener('keydown', function (e) {
