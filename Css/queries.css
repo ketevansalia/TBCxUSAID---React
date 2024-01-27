@@ -124,4 +124,13 @@
     bottom: 8%;
     left: 35%;
   }
+  .footer {
+    padding: 2.4rem 0;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+  .logo-sm {
+  }
 }
