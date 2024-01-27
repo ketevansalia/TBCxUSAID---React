@@ -19,9 +19,13 @@
     padding: 1.2rem 0;
     overflow-x: hidden;
   }
+
   .training-courses {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 3.4rem;
+  }
+  .course-img {
+    width: 100%;
   }
 
   .slide .flex-raw {
@@ -32,10 +36,38 @@
     height: 6rem;
     width: 24rem;
   }
+  .section-rules {
+    padding: 3.4rem 2.4rem;
+    width: 70%;
+  }
+
   /*MOBILE NAVIGATION */
+
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .line-top,
+  .line-middle,
+  .line-bottom {
+    font-size: 1rem;
+    height: 3px;
+    width: 50%;
+    border-radius: 1.5px;
+    height: 3px;
+    background-color: rgb(219, 219, 219);
+  }
+  .line-middle {
+    width: 100%;
+  }
+
+  .line-bottom {
+    align-self: flex-end;
   }
   .main-nav {
     background-color: #161616f3;
@@ -82,10 +114,6 @@
 @media (max-width: 34em) {
   html {
     font-size: 56.25%;
-  }
-
-  .course-img {
-    width: 100%;
   }
 
   .faq-section {

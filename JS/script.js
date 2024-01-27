@@ -73,3 +73,31 @@ const headerEl = document.querySelector('.header');
 btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
 });
+
+// RULES
+
+const rules = document.querySelector('.section-rules');
+const overlay = document.querySelector('.overlay');
+const btnCloseRules = document.querySelector('.close');
+const btnsOpenRules = document.querySelectorAll('.rules');
+
+const closeRules = function () {
+  rules.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+const openRules = function () {
+  rules.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+for (let i = 0; i < btnsOpenRules.length; i++)
+  btnsOpenRules[i].addEventListener('click', openRules);
+
+btnCloseRules.addEventListener('click', closeRules);
+overlay.addEventListener('click', closeRules);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !rules.classList.contains('hidden')) {
+    closeRules();
+  }
+});
